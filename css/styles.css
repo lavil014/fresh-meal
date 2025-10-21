@@ -12,8 +12,9 @@
   --blanco: #fefefe;
   --productosprincipales: #f0f0f0;
   --hovers: #eebf00;
-  --productosprincipalesbackground: #6c6c6c;
+  --productosprincipalesbackground: #888686;
   --background-footer: rgb(26, 25, 25);
+  --background-productos : #cecdcd;
 }
 
 .redes-sociales{
@@ -160,7 +161,7 @@
 .productos{
   display: flex;
   flex-direction: column;
-  background-color: var(--productosprincipalesbackground);
+  background-color: var(--background-productos);
 }
 
 .productos .productos-encabezado{
@@ -249,6 +250,7 @@
 
 .productos .seccion-de-suscribir{
   background-color: var(--hovers);
+  margin-top: 1rem;
 }
 
 .productos .seccion-de-suscribir .contenedor-principal{
@@ -268,7 +270,9 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 3rem;
-  max-width: 35%;
+  max-width: 40rem;
+  min-width: 25rem;
+  text-align: left;
 }
 
 .productos .seccion-de-suscribir .contenedor-principal form h2{
