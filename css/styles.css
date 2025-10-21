@@ -83,7 +83,7 @@
   flex-direction: row;
   gap: 1rem;
   padding: 3rem 5rem;
-  background-image: url(/media/freshmeal/hero.png);
+  background-image: url(/images/hero.png);
   background-size: cover;
   background-position:center;
   align-items: center;
