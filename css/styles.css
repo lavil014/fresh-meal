@@ -50,9 +50,18 @@
   font-size: 1rem;
 }
 
+.seccion-contactanos h3 i{
+  color: var(--barraybotones);
+  font-size: 0.8rem;
+}
+
 .seccion-contactanos-informacion p, .seccion-contactanos-horario p{
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.seccion-contactanos-horario h3 i{
+  font-size: 0.8rem;
 }
 
 .barra-de-navegacion ul {
@@ -185,12 +194,12 @@
 }
 
 .tarjeta-de-producto{
-  width: 20%;
+  width: 30%;
   padding: 0.8rem;
   background-color: var(--productosprincipales);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .controles{
@@ -212,6 +221,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+
+.tarjeta-de-producto .producto-info p i{
+  color: var(--rojoprincipal);
 }
 
 .tarjeta-de-producto h2{

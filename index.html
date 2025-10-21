@@ -37,7 +37,7 @@
     <div class="seccion-contactanos">
       <!--  Contactos -->
         <div class="seccion-contactanos-informacion">
-          <h3>Contactanos: () 123-1234-1234 </h3>
+          <h3><i class="fa-solid fa-phone"></i>  Contactanos: () 123-1234-1234 </h3>
           <p>Email: contacto@freshmeal.com</p>
         </div>
 
@@ -48,7 +48,7 @@
 
         <!-- Horario -->
         <div class="seccion-contactanos-horario">
-          <h3>Horaio de trabajo:</h3>
+          <h3><i class="fa-solid fa-clock"></i> Horaio de trabajo:</h3>
           <p>Lunes - Sabado (8:00 am a 8:00 pm)</p>
         </div>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <h2>El mejor sitio web <span>de compras del mundo</span></h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima vel magni aspernatur distinctio? Beatae aliquid doloremque deleniti atque quaerat magnam dolorum optio, accusantium cum?        
+      Lorem Ipsum es simplemente un texto de relleno de las imprentas y archivos<br>de texto. Lorem Ipsum ha sido el texto de relleno estándar de la industria.    
       </p>
       <div class="seccion-de-contenido-principal-btns">
       <button class="btns btn-principal">Leer mas</button>
@@ -116,7 +116,13 @@
       <!-- Producto info -->
       <div class="producto-info">
         <h2>Ensalada de Verano</h2>
-        <p>*****</p>
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+        </p>
         <h3>$95.50</h3>
         <button class="btn-producto"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
       </div>
@@ -129,7 +135,13 @@
       <!-- Producto info -->
       <div class="producto-info">
         <h2>Ensalada Rusa</h2>
-        <p>*****</p>
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+        </p>
         <h3>$129.00</h3>
         <button class="btn-producto"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
       </div>
@@ -142,7 +154,13 @@
       <!-- Producto info -->
       <div class="producto-info">
         <h2>Ensalada Griega</h2>
-        <p>*****</p>
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+        </p>
         <h3>$90.00</h3>
         <button class="btn-producto"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
       </div>
@@ -162,18 +180,19 @@
   <div class="seccion-de-suscribir">
     <div class="contenedor-principal">
       <img src="/images/rasberry.png" alt="">
-      <form action="">
+      <form action="" id="formulario-inscibirse">
         <h2>Suscribete a tu boletin informativo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae nam, suscipit sunt obcaecati quaerat modi exercitationem doloremque consequatur facilis officiis hic saepe amet nesciunt mollitia nihil delectus voluptate accusamus?
+        <p>Lorem Ipsum como su texto modelo predeterminado, y una búsqueda de 'lorem ipsum' descubrirá muchos sitios web que aún están en su infancia.
         </p>
         <div class="contender-de-input">
           <input type="email" placeholder="email@freshmeal.com">
-          <button type="submit">Suscribete</button>
+          <button id="btn-submit" type="submit">Suscribete</button>
         </div> 
       </form>
     </div>
   </div>
  </section>
+
  <footer>
   <div class="contenedor-footer">
       <div class="sobre-nosotros">
@@ -197,7 +216,7 @@
       <h4>Siguenos</h4>
       <hr>
       <li><a href=""><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
-       <li><a href=""><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+       <li><a href=""><i class="fa-brands fa-x-twitter"></i>  Twitter</a></li>
         <li><a href=""><i class="fa-brands fa-instagram"></i>  Instagram</a></li>
     </ul>
   </div>
@@ -205,5 +224,19 @@
     Copyright &copy 2025 Todos los derechos reservados
   </div>
  </footer>
+
+ <script>
+
+  const formulario = document.getElementById('formulario-inscibirse');
+  const btn = document.getElementById('btn-submit')
+
+  const inabilitarSubmit = (e)=>{
+    e.preventDefault()
+  }
+
+
+  formulario.addEventListener('submit', inabilitarSubmit);
+
+ </script>
 </body>
 </html>
